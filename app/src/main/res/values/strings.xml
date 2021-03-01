@@ -10,4 +10,6 @@
       the License.
       -->
     <string name="app_name">AndroidDevChallenge</string>
+    <string name="title_categories">Categories</string>
+    <string name="title_pets">Pets</string>
 </resources>
