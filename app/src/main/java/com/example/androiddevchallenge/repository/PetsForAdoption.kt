@@ -1,9 +1,6 @@
 package com.example.androiddevchallenge.repository
 
-import com.example.androiddevchallenge.model.Gender
-import com.example.androiddevchallenge.model.Pet
-import com.example.androiddevchallenge.model.PetForAdoption
-import com.example.androiddevchallenge.model.PetType
+import com.example.androiddevchallenge.model.*
 
 val dogRandomImages = listOf(
     "https://source.unsplash.com/featured/?dog",
@@ -39,9 +36,11 @@ val petsForAdoption: List<PetForAdoption> = listOf(
             age = 2,
             type = PetType.DOG,
             gender = Gender.MALE,
-            images = dogRandomImages
+            images = dogRandomImages,
+            size = Size.MEDIUM
         ),
-        location = "Ann Arbor"
+        location = "Ann Arbor",
+        description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a cursus eros. Donec at dapibus justo. In blandit, risus eu fringilla viverra, urna urna varius sapien, in euismod sem neque in erat. Suspendisse convallis scelerisque nisi vel mattis. Donec tempus lectus in metus commodo, et pulvinar ipsum pulvinar. "
     ),
     PetForAdoption(
         id = 2L,
@@ -51,9 +50,11 @@ val petsForAdoption: List<PetForAdoption> = listOf(
             age = 4,
             type = PetType.DOG,
             gender = Gender.MALE,
-            images = dogRandomImages
+            images = dogRandomImages,
+            size = Size.BIG
         ),
-        location = "Atlanta"
+        location = "Atlanta",
+        description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a cursus eros. Donec at dapibus justo. In blandit, risus eu fringilla viverra, urna urna varius sapien, in euismod sem neque in erat. Suspendisse convallis scelerisque nisi vel mattis. Donec tempus lectus in metus commodo, et pulvinar ipsum pulvinar. "
     ),
     PetForAdoption(
         id = 3L,
@@ -63,9 +64,11 @@ val petsForAdoption: List<PetForAdoption> = listOf(
             age = 6,
             type = PetType.DOG,
             gender = Gender.FEMALE,
-            images = dogRandomImages
+            images = dogRandomImages,
+            size = Size.SMALL
         ),
-        location = "Austin"
+        location = "Austin",
+        description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a cursus eros. Donec at dapibus justo. In blandit, risus eu fringilla viverra, urna urna varius sapien, in euismod sem neque in erat. Suspendisse convallis scelerisque nisi vel mattis. Donec tempus lectus in metus commodo, et pulvinar ipsum pulvinar. "
     ),
     PetForAdoption(
         id = 4L,
@@ -75,9 +78,11 @@ val petsForAdoption: List<PetForAdoption> = listOf(
             age = 3,
             type = PetType.DOG,
             gender = Gender.FEMALE,
-            images = dogRandomImages
+            images = dogRandomImages,
+            size = Size.MEDIUM
         ),
-        location = "Boulder"
+        location = "Boulder",
+        description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a cursus eros. Donec at dapibus justo. In blandit, risus eu fringilla viverra, urna urna varius sapien, in euismod sem neque in erat. Suspendisse convallis scelerisque nisi vel mattis. Donec tempus lectus in metus commodo, et pulvinar ipsum pulvinar. "
     ),
     //CATS
     PetForAdoption(
@@ -88,9 +93,11 @@ val petsForAdoption: List<PetForAdoption> = listOf(
             age = 1,
             type = PetType.CAT,
             gender = Gender.FEMALE,
-            images = catRandomImages
+            images = catRandomImages,
+            size = Size.SMALL
         ),
-        location = "Boulder - Pearl Place"
+        location = "Boulder - Pearl Place",
+        description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a cursus eros. Donec at dapibus justo. In blandit, risus eu fringilla viverra, urna urna varius sapien, in euismod sem neque in erat. Suspendisse convallis scelerisque nisi vel mattis. Donec tempus lectus in metus commodo, et pulvinar ipsum pulvinar. "
     ),
     PetForAdoption(
         id = 6L,
@@ -100,9 +107,11 @@ val petsForAdoption: List<PetForAdoption> = listOf(
             age = 5,
             type = PetType.CAT,
             gender = Gender.MALE,
-            images = catRandomImages
+            images = catRandomImages,
+            size = Size.SMALL
         ),
-        location = "Boulder - Walnut"
+        location = "Boulder - Walnut",
+        description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a cursus eros. Donec at dapibus justo. In blandit, risus eu fringilla viverra, urna urna varius sapien, in euismod sem neque in erat. Suspendisse convallis scelerisque nisi vel mattis. Donec tempus lectus in metus commodo, et pulvinar ipsum pulvinar. "
     ),
     PetForAdoption(
         id = 7L,
@@ -112,9 +121,11 @@ val petsForAdoption: List<PetForAdoption> = listOf(
             age = 3,
             type = PetType.CAT,
             gender = Gender.FEMALE,
-            images = catRandomImages
+            images = catRandomImages,
+            size = Size.SMALL
         ),
-        location = "Cambridge"
+        location = "Cambridge",
+        description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a cursus eros. Donec at dapibus justo. In blandit, risus eu fringilla viverra, urna urna varius sapien, in euismod sem neque in erat. Suspendisse convallis scelerisque nisi vel mattis. Donec tempus lectus in metus commodo, et pulvinar ipsum pulvinar. "
     ),
     //RABBIT
     PetForAdoption(
@@ -125,9 +136,11 @@ val petsForAdoption: List<PetForAdoption> = listOf(
             age = 3,
             type = PetType.RABBIT,
             gender = Gender.MALE,
-            images = rabbitRandomImages
+            images = rabbitRandomImages,
+            size = Size.SMALL
         ),
-        location = "Cambridge"
+        location = "Cambridge",
+        description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a cursus eros. Donec at dapibus justo. In blandit, risus eu fringilla viverra, urna urna varius sapien, in euismod sem neque in erat. Suspendisse convallis scelerisque nisi vel mattis. Donec tempus lectus in metus commodo, et pulvinar ipsum pulvinar. "
     ),
     PetForAdoption(
         id = 9L,
@@ -137,9 +150,11 @@ val petsForAdoption: List<PetForAdoption> = listOf(
             age = 6,
             type = PetType.RABBIT,
             gender = Gender.FEMALE,
-            images = rabbitRandomImages
+            images = rabbitRandomImages,
+            size = Size.SMALL
         ),
-        location = "Cambridge"
+        location = "Cambridge",
+        description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a cursus eros. Donec at dapibus justo. In blandit, risus eu fringilla viverra, urna urna varius sapien, in euismod sem neque in erat. Suspendisse convallis scelerisque nisi vel mattis. Donec tempus lectus in metus commodo, et pulvinar ipsum pulvinar. "
     ),
     PetForAdoption(
         id = 10L,
@@ -149,9 +164,11 @@ val petsForAdoption: List<PetForAdoption> = listOf(
             age = 1,
             type = PetType.RABBIT,
             gender = Gender.MALE,
-            images = rabbitRandomImages
+            images = rabbitRandomImages,
+            size = Size.SMALL
         ),
-        location = "Chapel Hill"
+        location = "Chapel Hill",
+        description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a cursus eros. Donec at dapibus justo. In blandit, risus eu fringilla viverra, urna urna varius sapien, in euismod sem neque in erat. Suspendisse convallis scelerisque nisi vel mattis. Donec tempus lectus in metus commodo, et pulvinar ipsum pulvinar. "
     ),
     //HAMSTERS
     PetForAdoption(
@@ -162,9 +179,11 @@ val petsForAdoption: List<PetForAdoption> = listOf(
             age = 4,
             type = PetType.HAMSTER,
             gender = Gender.MALE,
-            images = hamsterRandomImages
+            images = hamsterRandomImages,
+            size = Size.SMALL
         ),
-        location = "Chicago - Carpenter"
+        location = "Chicago - Carpenter",
+        description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a cursus eros. Donec at dapibus justo. In blandit, risus eu fringilla viverra, urna urna varius sapien, in euismod sem neque in erat. Suspendisse convallis scelerisque nisi vel mattis. Donec tempus lectus in metus commodo, et pulvinar ipsum pulvinar. "
     ),
     PetForAdoption(
         id = 12L,
@@ -174,9 +193,11 @@ val petsForAdoption: List<PetForAdoption> = listOf(
             age = 3,
             type = PetType.HAMSTER,
             gender = Gender.MALE,
-            images = hamsterRandomImages
+            images = hamsterRandomImages,
+            size = Size.SMALL
         ),
-        location = "Chicago - Fulton Market"
+        location = "Chicago - Fulton Market",
+        description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a cursus eros. Donec at dapibus justo. In blandit, risus eu fringilla viverra, urna urna varius sapien, in euismod sem neque in erat. Suspendisse convallis scelerisque nisi vel mattis. Donec tempus lectus in metus commodo, et pulvinar ipsum pulvinar. "
     ),
     PetForAdoption(
         id = 13L,
@@ -186,9 +207,11 @@ val petsForAdoption: List<PetForAdoption> = listOf(
             age = 1,
             type = PetType.HAMSTER,
             gender = Gender.MALE,
-            images = hamsterRandomImages
+            images = hamsterRandomImages,
+            size = Size.SMALL
         ),
-        location = "Mountain View"
+        location = "Mountain View",
+        description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a cursus eros. Donec at dapibus justo. In blandit, risus eu fringilla viverra, urna urna varius sapien, in euismod sem neque in erat. Suspendisse convallis scelerisque nisi vel mattis. Donec tempus lectus in metus commodo, et pulvinar ipsum pulvinar. "
     ),
 
 )
