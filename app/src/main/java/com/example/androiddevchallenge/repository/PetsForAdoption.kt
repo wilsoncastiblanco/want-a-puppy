@@ -40,7 +40,7 @@ val petsForAdoption: List<PetForAdoption> = listOf(
             age = 2,
             type = PetType.DOG,
             gender = Gender.MALE,
-            images = dogRandomImages,
+            images = dogRandomImages.shuffled(),
             size = Size.MEDIUM
         ),
         location = "Ann Arbor",
@@ -54,7 +54,7 @@ val petsForAdoption: List<PetForAdoption> = listOf(
             age = 4,
             type = PetType.DOG,
             gender = Gender.MALE,
-            images = dogRandomImages,
+            images = dogRandomImages.shuffled(),
             size = Size.BIG
         ),
         location = "Atlanta",
@@ -68,7 +68,7 @@ val petsForAdoption: List<PetForAdoption> = listOf(
             age = 6,
             type = PetType.DOG,
             gender = Gender.FEMALE,
-            images = dogRandomImages,
+            images = dogRandomImages.shuffled(),
             size = Size.SMALL
         ),
         location = "Austin",
@@ -82,7 +82,7 @@ val petsForAdoption: List<PetForAdoption> = listOf(
             age = 3,
             type = PetType.DOG,
             gender = Gender.FEMALE,
-            images = dogRandomImages,
+            images = dogRandomImages.shuffled(),
             size = Size.MEDIUM
         ),
         location = "Boulder",
@@ -97,7 +97,7 @@ val petsForAdoption: List<PetForAdoption> = listOf(
             age = 1,
             type = PetType.CAT,
             gender = Gender.FEMALE,
-            images = catRandomImages,
+            images = catRandomImages.shuffled(),
             size = Size.SMALL
         ),
         location = "Boulder - Pearl Place",
@@ -111,7 +111,7 @@ val petsForAdoption: List<PetForAdoption> = listOf(
             age = 5,
             type = PetType.CAT,
             gender = Gender.MALE,
-            images = catRandomImages,
+            images = catRandomImages.shuffled(),
             size = Size.SMALL
         ),
         location = "Boulder - Walnut",
@@ -125,7 +125,7 @@ val petsForAdoption: List<PetForAdoption> = listOf(
             age = 3,
             type = PetType.CAT,
             gender = Gender.FEMALE,
-            images = catRandomImages,
+            images = catRandomImages.shuffled(),
             size = Size.SMALL
         ),
         location = "Cambridge",
@@ -140,7 +140,7 @@ val petsForAdoption: List<PetForAdoption> = listOf(
             age = 3,
             type = PetType.RABBIT,
             gender = Gender.MALE,
-            images = rabbitRandomImages,
+            images = rabbitRandomImages.shuffled(),
             size = Size.SMALL
         ),
         location = "Cambridge",
@@ -154,7 +154,7 @@ val petsForAdoption: List<PetForAdoption> = listOf(
             age = 6,
             type = PetType.RABBIT,
             gender = Gender.FEMALE,
-            images = rabbitRandomImages,
+            images = rabbitRandomImages.shuffled(),
             size = Size.SMALL
         ),
         location = "Cambridge",
@@ -168,7 +168,7 @@ val petsForAdoption: List<PetForAdoption> = listOf(
             age = 1,
             type = PetType.RABBIT,
             gender = Gender.MALE,
-            images = rabbitRandomImages,
+            images = rabbitRandomImages.shuffled(),
             size = Size.SMALL
         ),
         location = "Chapel Hill",
@@ -183,7 +183,7 @@ val petsForAdoption: List<PetForAdoption> = listOf(
             age = 4,
             type = PetType.HAMSTER,
             gender = Gender.MALE,
-            images = hamsterRandomImages,
+            images = hamsterRandomImages.shuffled(),
             size = Size.SMALL
         ),
         location = "Chicago - Carpenter",
@@ -197,7 +197,7 @@ val petsForAdoption: List<PetForAdoption> = listOf(
             age = 3,
             type = PetType.HAMSTER,
             gender = Gender.MALE,
-            images = hamsterRandomImages,
+            images = hamsterRandomImages.shuffled(),
             size = Size.SMALL
         ),
         location = "Chicago - Fulton Market",
@@ -211,7 +211,7 @@ val petsForAdoption: List<PetForAdoption> = listOf(
             age = 1,
             type = PetType.HAMSTER,
             gender = Gender.MALE,
-            images = hamsterRandomImages,
+            images = hamsterRandomImages.shuffled(),
             size = Size.SMALL
         ),
         location = "Mountain View",
