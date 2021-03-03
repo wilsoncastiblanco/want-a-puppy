@@ -19,6 +19,9 @@ After the official release of jetpack compose, I couldn't wait to accept the cha
 <!-- You can add more screenshots here if you like -->
 <img src="/results/screenshot_1.png" width="260">&emsp;<img src="/results/screenshot_2.png" width="260">
 
+## Icons
+<div>Icons taken from: <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a></div>
+
 ## License
 ```
 Copyright 2020 The Android Open Source Project
