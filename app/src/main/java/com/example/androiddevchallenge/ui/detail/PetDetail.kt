@@ -79,7 +79,12 @@ fun Body(scrollState: ScrollState, petForAdoption: PetForAdoption) {
                 .verticalScroll(scrollState),
             horizontalAlignment = Alignment.CenterHorizontally,
         ) {
-            Text(text = petForAdoption.description)
+            Text(
+                text = petForAdoption.description,
+                fontWeight = FontWeight.Light,
+                color = MaterialTheme.colors.secondary,
+                modifier = Modifier.padding(start = 4.dp),
+            )
             Spacer(Modifier.height(8.dp))
             PuppyAdditionalDetail(petForAdoption)
             Spacer(Modifier.height(8.dp))
@@ -140,7 +145,10 @@ private fun PuppyAdditionalDetail(petForAdoption: PetForAdoption) {
                     .fillMaxHeight()
                     .width(1.dp)
             )
-            Column(horizontalAlignment = Alignment.CenterHorizontally) {
+            Column(
+                horizontalAlignment = Alignment.CenterHorizontally,
+                modifier = Modifier.width(70.dp)
+            ) {
                 Icon(
                     imageVector = Icons.Filled.LocationOn,
                     contentDescription = null
@@ -150,6 +158,7 @@ private fun PuppyAdditionalDetail(petForAdoption: PetForAdoption) {
                     style = MaterialTheme.typography.subtitle2,
                     fontWeight = FontWeight.Light,
                     overflow = TextOverflow.Ellipsis,
+                    maxLines = 1,
                     modifier = Modifier.padding(start = 4.dp),
                 )
             }
