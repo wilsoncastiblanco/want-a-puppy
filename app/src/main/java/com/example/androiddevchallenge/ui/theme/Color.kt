@@ -26,5 +26,3 @@ val black = Color(0xFF000000)
 
 val gray700 = Color(0xFFc7c7c7)
 val cyan700 = Color(0xFF00b2cc)
-
-

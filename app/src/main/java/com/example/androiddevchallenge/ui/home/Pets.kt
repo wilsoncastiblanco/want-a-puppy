@@ -97,7 +97,8 @@ fun Pets(
                     onPetClick = onPetClick
                 )
             }
-        })
+        }
+    )
 }
 
 @Composable
@@ -218,7 +219,6 @@ fun PetImage(
         )
     }
 }
-
 
 @Preview("Pet Preview")
 @Composable

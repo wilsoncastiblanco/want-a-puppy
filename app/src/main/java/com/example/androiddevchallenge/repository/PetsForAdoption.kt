@@ -46,7 +46,7 @@ val hamsterRandomImages = listOf(
 )
 
 val petsForAdoption: List<PetForAdoption> = listOf(
-    //DOGS
+    // DOGS
     PetForAdoption(
         id = 1L,
         pet = Pet(
@@ -103,7 +103,7 @@ val petsForAdoption: List<PetForAdoption> = listOf(
         location = "Boulder",
         description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a cursus eros. Donec at dapibus justo. In blandit, risus eu fringilla viverra, urna urna varius sapien, in euismod sem neque in erat. Suspendisse convallis scelerisque nisi vel mattis. Donec tempus lectus in metus commodo, et pulvinar ipsum pulvinar. "
     ),
-    //CATS
+    // CATS
     PetForAdoption(
         id = 5L,
         pet = Pet(
@@ -146,7 +146,7 @@ val petsForAdoption: List<PetForAdoption> = listOf(
         location = "Cambridge",
         description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a cursus eros. Donec at dapibus justo. In blandit, risus eu fringilla viverra, urna urna varius sapien, in euismod sem neque in erat. Suspendisse convallis scelerisque nisi vel mattis. Donec tempus lectus in metus commodo, et pulvinar ipsum pulvinar. "
     ),
-    //RABBIT
+    // RABBIT
     PetForAdoption(
         id = 8L,
         pet = Pet(
@@ -189,7 +189,7 @@ val petsForAdoption: List<PetForAdoption> = listOf(
         location = "Chapel Hill",
         description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a cursus eros. Donec at dapibus justo. In blandit, risus eu fringilla viverra, urna urna varius sapien, in euismod sem neque in erat. Suspendisse convallis scelerisque nisi vel mattis. Donec tempus lectus in metus commodo, et pulvinar ipsum pulvinar. "
     ),
-    //HAMSTERS
+    // HAMSTERS
     PetForAdoption(
         id = 11L,
         pet = Pet(

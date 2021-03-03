@@ -69,7 +69,6 @@ fun SearchBar() {
                     )
                     Text(text = stringResource(R.string.hint_search))
                 }
-
             }
             Row(
                 modifier = Modifier

@@ -77,7 +77,6 @@ private val ImageOverlap = 200.dp
 private val MinTitleOffset = 56.dp
 private val MaxTitleOffset = ImageOverlap + MinTitleOffset
 
-
 @Composable
 fun PetDetail(
     petForAdoption: PetForAdoption,
@@ -134,11 +133,11 @@ fun Body(scrollState: ScrollState, petForAdoption: PetForAdoption) {
 private fun AdoptMeButton(petForAdoption: PetForAdoption) {
     Button(
         onClick = {
-
         },
         modifier = Modifier
             .fillMaxWidth()
-            .padding(bottom = 24.dp), shape = RoundedCornerShape(16.dp),
+            .padding(bottom = 24.dp),
+        shape = RoundedCornerShape(16.dp),
         colors = ButtonDefaults.buttonColors(
             backgroundColor = petForAdoption.pet.gender.color()
         )

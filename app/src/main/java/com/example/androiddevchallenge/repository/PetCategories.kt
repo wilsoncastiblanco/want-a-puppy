@@ -19,7 +19,6 @@ import com.example.androiddevchallenge.R
 import com.example.androiddevchallenge.model.PetCategory
 import com.example.androiddevchallenge.model.PetType
 
-
 val petCategories: List<PetCategory> = listOf(
     PetCategory(
         id = 1L,

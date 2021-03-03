@@ -48,19 +48,21 @@ import com.example.androiddevchallenge.ui.theme.WantAPuppyTheme
 fun CategoriesList(
     onCategoryClick: (Long) -> Unit,
 ) {
-    Column(content = {
-        Text(
-            text = stringResource(id = R.string.title_categories),
-            style = MaterialTheme.typography.h6,
-            fontWeight = FontWeight.SemiBold,
-            color = Color.Black,
-            maxLines = 1,
-            overflow = TextOverflow.Ellipsis
-        )
-        Categories(
-            onCategoryClick = onCategoryClick,
-        )
-    })
+    Column(
+        content = {
+            Text(
+                text = stringResource(id = R.string.title_categories),
+                style = MaterialTheme.typography.h6,
+                fontWeight = FontWeight.SemiBold,
+                color = Color.Black,
+                maxLines = 1,
+                overflow = TextOverflow.Ellipsis
+            )
+            Categories(
+                onCategoryClick = onCategoryClick,
+            )
+        }
+    )
 }
 
 @Composable
@@ -126,7 +128,6 @@ fun CategoryImage(
         )
     }
 }
-
 
 @Preview("Category Preview")
 @Composable
