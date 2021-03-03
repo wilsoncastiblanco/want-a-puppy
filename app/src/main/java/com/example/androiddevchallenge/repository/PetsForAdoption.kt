@@ -1,29 +1,33 @@
 package com.example.androiddevchallenge.repository
 
-import com.example.androiddevchallenge.model.*
+import com.example.androiddevchallenge.model.Gender
+import com.example.androiddevchallenge.model.Pet
+import com.example.androiddevchallenge.model.PetForAdoption
+import com.example.androiddevchallenge.model.PetType
+import com.example.androiddevchallenge.model.Size
 
 val dogRandomImages = listOf(
-    "https://source.unsplash.com/featured/?dog",
-    "https://source.unsplash.com/featured/?dog",
-    "https://source.unsplash.com/featured/?dog"
+    "https://images.unsplash.com/photo-1614573171046-19b4dcc2af1e",
+    "https://images.unsplash.com/photo-1614344263625-377b98d01eeb",
+    "https://images.unsplash.com/photo-1614362520723-18ee20d23aa3"
 )
 
 val catRandomImages = listOf(
-    "https://source.unsplash.com/featured/?cat",
-    "https://source.unsplash.com/featured/?cat",
-    "https://source.unsplash.com/featured/?cat"
+    "https://images.unsplash.com/photo-1614676379129-0cb2b6628c5",
+    "https://images.unsplash.com/photo-1614102954362-2afd9d4594e5",
+    "https://images.unsplash.com/photo-1613915587574-322c40825be1"
 )
 
 val rabbitRandomImages = listOf(
-    "https://source.unsplash.com/featured/?rabbit",
-    "https://source.unsplash.com/featured/?rabbit",
-    "https://source.unsplash.com/featured/?rabbit"
+    "https://images.unsplash.com/photo-1605905225062-965b3149767b",
+    "https://images.unsplash.com/photo-1607029879874-b24ac9de2eca",
+    "https://images.unsplash.com/photo-1606753927971-d1503cb6a849"
 )
 
 val hamsterRandomImages = listOf(
-    "https://source.unsplash.com/featured/?hamster",
-    "https://source.unsplash.com/featured/?hamster",
-    "https://source.unsplash.com/featured/?hamster"
+    "https://images.unsplash.com/photo-1548767797-d8c844163c4c",
+    "https://images.unsplash.com/photo-1612267168669-679c961c5b31",
+    "https://images.unsplash.com/photo-1611952310929-e04cea6baeda"
 )
 
 val petsForAdoption: List<PetForAdoption> = listOf(
