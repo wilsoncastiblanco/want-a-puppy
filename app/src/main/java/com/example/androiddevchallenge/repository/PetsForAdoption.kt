@@ -13,7 +13,6 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
 package com.example.androiddevchallenge.repository
 
 import com.example.androiddevchallenge.model.Gender
@@ -233,5 +232,4 @@ val petsForAdoption: List<PetForAdoption> = listOf(
         location = "Mountain View",
         description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a cursus eros. Donec at dapibus justo. In blandit, risus eu fringilla viverra, urna urna varius sapien, in euismod sem neque in erat. Suspendisse convallis scelerisque nisi vel mattis. Donec tempus lectus in metus commodo, et pulvinar ipsum pulvinar. "
     ),
-
 )

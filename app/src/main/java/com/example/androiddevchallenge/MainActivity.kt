@@ -63,8 +63,6 @@ fun WantAPuppyApp(backDispatcher: OnBackPressedDispatcher) {
             }
         }
     }
-
-
 }
 
 @Preview("Light Theme", widthDp = 360, heightDp = 640)
