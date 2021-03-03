@@ -19,6 +19,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.res.vectorResource
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.Dp
@@ -26,7 +27,7 @@ import androidx.compose.ui.unit.dp
 import com.example.androiddevchallenge.R
 import com.example.androiddevchallenge.model.PetCategory
 import com.example.androiddevchallenge.repository.petCategories
-import com.example.androiddevchallenge.ui.theme.MyTheme
+import com.example.androiddevchallenge.ui.theme.WantAPuppyTheme
 
 @Composable
 fun CategoriesList(
@@ -35,6 +36,8 @@ fun CategoriesList(
     Column(content = {
         Text(
             text = stringResource(id = R.string.title_categories),
+            style = MaterialTheme.typography.h6,
+            fontWeight = FontWeight.SemiBold,
             color = Color.Black,
             maxLines = 1,
             overflow = TextOverflow.Ellipsis
@@ -113,7 +116,7 @@ fun CategoryImage(
 @Preview("Category Preview")
 @Composable
 fun CategoryPreview() {
-    MyTheme {
+    WantAPuppyTheme {
         val petCategory = petCategories.first()
         CategoryItem(
             category = petCategory,

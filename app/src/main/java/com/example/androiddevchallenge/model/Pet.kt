@@ -17,7 +17,7 @@ data class Pet(
 ) : Parcelable
 
 enum class PetType {
-    DOG, CAT, RABBIT, HAMSTER
+    DOG, CAT, RABBIT, HAMSTER, PIG
 }
 
 enum class Gender {

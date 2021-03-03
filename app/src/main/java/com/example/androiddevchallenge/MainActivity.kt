@@ -24,13 +24,12 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.ui.tooling.preview.Preview
-import androidx.core.view.WindowCompat
 import com.example.androiddevchallenge.ui.detail.PetDetail
 import com.example.androiddevchallenge.ui.home.Home
 import com.example.androiddevchallenge.ui.nav.Actions
 import com.example.androiddevchallenge.ui.nav.Destination
 import com.example.androiddevchallenge.ui.nav.Navigator
-import com.example.androiddevchallenge.ui.theme.MyTheme
+import com.example.androiddevchallenge.ui.theme.WantAPuppyTheme
 import dev.chrisbanes.accompanist.insets.ProvideWindowInsets
 
 class MainActivity : AppCompatActivity() {
@@ -38,9 +37,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         setContent {
-            MyTheme {
-                WantAPuppyApp(onBackPressedDispatcher)
-            }
+            WantAPuppyApp(onBackPressedDispatcher)
         }
     }
 }
@@ -54,7 +51,7 @@ fun WantAPuppyApp(backDispatcher: OnBackPressedDispatcher) {
     }
     val actions = remember(navigator) { Actions(navigator) }
     ProvideWindowInsets {
-        MyTheme {
+        WantAPuppyTheme {
             Crossfade(navigator.current) { destination ->
                 when (destination) {
                     Destination.Home -> Home(actions.petSelected)
@@ -73,7 +70,7 @@ fun WantAPuppyApp(backDispatcher: OnBackPressedDispatcher) {
 @Preview("Light Theme", widthDp = 360, heightDp = 640)
 @Composable
 fun LightPreview() {
-    MyTheme {
+    WantAPuppyTheme {
         WantAPuppyApp(OnBackPressedDispatcher())
     }
 }
@@ -81,7 +78,7 @@ fun LightPreview() {
 @Preview("Dark Theme", widthDp = 360, heightDp = 640)
 @Composable
 fun DarkPreview() {
-    MyTheme(darkTheme = true) {
+    WantAPuppyTheme(darkTheme = true) {
         WantAPuppyApp(OnBackPressedDispatcher())
     }
 }

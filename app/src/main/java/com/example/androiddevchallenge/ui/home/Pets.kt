@@ -15,7 +15,6 @@ import androidx.compose.material.icons.filled.LocationOn
 import androidx.compose.material.icons.filled.Male
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.remember
-import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
@@ -30,7 +29,9 @@ import com.example.androiddevchallenge.R
 import com.example.androiddevchallenge.model.Gender
 import com.example.androiddevchallenge.model.PetForAdoption
 import com.example.androiddevchallenge.repository.petsForAdoption
-import com.example.androiddevchallenge.ui.theme.MyTheme
+import com.example.androiddevchallenge.ui.theme.WantAPuppyTheme
+import com.example.androiddevchallenge.ui.theme.cyan100
+import com.example.androiddevchallenge.ui.theme.magenta100
 import dev.chrisbanes.accompanist.coil.CoilImage
 
 @Composable
@@ -40,6 +41,8 @@ fun PetsCollection(
     Column {
         Text(
             text = stringResource(R.string.title_pets),
+            style = MaterialTheme.typography.h6,
+            fontWeight = FontWeight.SemiBold,
             color = Color.Black,
             maxLines = 1,
             overflow = TextOverflow.Ellipsis
@@ -90,7 +93,7 @@ fun PetItem(
             bottomEnd = 12.dp,
             bottomStart = 12.dp
         ),
-        backgroundColor = Color.White
+        backgroundColor = MaterialTheme.colors.background
     ) {
         Column {
             Box(
@@ -165,8 +168,8 @@ fun Gender.icon() = when (this) {
 }
 
 fun Gender.color() = when (this) {
-    Gender.MALE -> Color.Cyan
-    Gender.FEMALE -> Color.Magenta
+    Gender.MALE -> cyan100
+    Gender.FEMALE -> magenta100
 }
 
 @Composable
@@ -194,7 +197,7 @@ fun PetImage(
 @Preview("Pet Preview")
 @Composable
 fun PetPreview() {
-    MyTheme {
+    WantAPuppyTheme {
         val pet = petsForAdoption.first()
         PetItem(
             petForAdoption = pet,

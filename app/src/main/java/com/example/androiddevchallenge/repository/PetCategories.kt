@@ -30,6 +30,12 @@ val petCategories: List<PetCategory> = listOf(
         icon = PetIcon.rabbit,
         type = PetType.RABBIT
     ),
+    PetCategory(
+        id = 6L,
+        name = "Pigs",
+        icon = PetIcon.pig,
+        type = PetType.PIG
+    ),
 )
 
 object PetIcon {
@@ -37,4 +43,5 @@ object PetIcon {
     const val cat = R.drawable.ic_cat
     const val mouse = R.drawable.ic_mouse
     const val rabbit = R.drawable.ic_rabbit
+    const val pig = R.drawable.ic_pig
 }
