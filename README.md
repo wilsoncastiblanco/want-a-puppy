@@ -7,6 +7,7 @@
 
 ## :scroll: Description
 <!--- Describe your app in one or two sentences -->
+#AndroidDevChallenge
 In Want a Puppy you will find that friend that you have been looking for, long time ago.
 
 ## :bulb: Motivation and Context
