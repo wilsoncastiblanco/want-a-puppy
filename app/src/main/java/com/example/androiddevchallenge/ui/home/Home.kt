@@ -51,4 +51,3 @@ fun Home(petSelected: (PetForAdoption) -> Unit) {
     }
 }
 
-}
